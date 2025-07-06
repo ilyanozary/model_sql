@@ -1,4 +1,8 @@
 fastapi
-uvicorn
+uvicorn[standard]
 transformers
 pydantic
+torch
+accelerate
+sentencepiece
+protobuf
