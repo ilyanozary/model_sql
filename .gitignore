@@ -1,0 +1,55 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# VS Code settings
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+*.log
+
+# Model files
+*.pt
+*.pth
+*.h5
+*.ckpt
+
+# Data files
+*.sqlite3
+*.db
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.xls*
+
+# Test outputs
+htmlcov/
+.coverage
+
+# Ignore local notebooks outputs
+notebooks/*.ipynb
+!notebooks/*.ipynb
+
+# Ignore schema dumps
+schema/*.sql
+!schema/*.sql

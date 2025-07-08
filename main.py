@@ -1,5 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
+from fastapi.middleware.cors import CORSMiddleware
 from model_loader import load_schema, load_sqlcoder
 import logging
 import traceback
@@ -41,6 +42,15 @@ app = FastAPI(
     title="SQL Generator API",
     description="Generate SQL queries from natural language",
     lifespan=lifespan
+)
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],          
+    allow_credentials=False,      
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 class QueryRequest(BaseModel):
