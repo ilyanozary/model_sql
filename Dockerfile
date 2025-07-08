@@ -1,5 +1,5 @@
 # Use an official PyTorch image with CUDA for GPU support
-FROM pytorch/pytorch:2.2.2-cuda12.1-cudnn8-runtime
+FROM pytorch/pytorch:2.2.0-cuda12.1-cudnn8-runtime
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1 \
